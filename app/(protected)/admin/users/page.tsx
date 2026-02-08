@@ -21,7 +21,7 @@ function roleLabel(role: User["role"]) {
 }
 
 export default function UsersAdminPage() {
-  const apiBase = process.env.NEXT_PUBLIC_API_URL || "";
+  const apiBase = "";
   const [users, setUsers] = useState<User[]>([]);
   const [loading, setLoading] = useState(true);
   const [err, setErr] = useState<string | null>(null);
